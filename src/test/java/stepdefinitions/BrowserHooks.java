@@ -34,7 +34,7 @@ public class BrowserHooks extends BaseUtil{
 
     @Before
     public void openSite ( ) throws MalformedURLException, IOException {
-        if ( !startBrowser ) {
+      //  if ( !startBrowser ) {
             System.setProperty ( "webdriver.chrome.driver" , "src/test/resources/drivers/chromedriver.exe" );
             FileInputStream propsfile = new FileInputStream ( "src/test/resources/TestData.properties" );
             props.load ( propsfile );
@@ -43,8 +43,8 @@ public class BrowserHooks extends BaseUtil{
             baseUtil.driver = new ChromeDriver ( options );
             baseUtil.driver.manage ( ).window ( ).maximize ( );
             baseUtil.driver.manage ( ).deleteAllCookies ( );
-            startBrowser = true;
-        }
+           // startBrowser = true;
+       // }
     }
 
     @After
