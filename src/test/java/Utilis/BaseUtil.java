@@ -18,44 +18,7 @@ import java.util.Properties;
  */
 public class BaseUtil {
 
-    private WebDriver driver;
-    private static boolean startBrowser = false;
+    public WebDriver driver;
 
-
-    public WebDriver getDriver ( ) {
-        return driver;
-    }
-
-    @Before
-    public void init ( ) throws Exception {
-        if ( !startBrowser ) {
-            ChromeOptions options = new ChromeOptions ( );
-            Properties props = new Properties ( );
-            System.setProperty ( "webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe" );
-            FileInputStream propsfile = new FileInputStream ( "src/test/resources/TestData.properties" );
-            props.load ( propsfile );
-            options.addArguments ( "--disable-extensions" );
-            driver = new ChromeDriver ( options );
-            driver.manage ( ).window ( ).maximize ( );
-            driver.manage ( ).deleteAllCookies ( );
-            startBrowser = true;
-
-        }
-    }
-
-
-    @After
-    public void embedScreenshotAndCloseBrowser ( Scenario scenario ) {
-        if ( scenario.isFailed ( ) ) {
-            try {
-                scenario.write ( "Current Page URL is " + driver.getCurrentUrl ( ) );
-                byte[] screenshot = ( ( TakesScreenshot ) driver ).getScreenshotAs ( OutputType.BYTES );
-                scenario.embed ( screenshot, "image/png" );
-            } catch ( WebDriverException somePlatformsDontSupportScreenshots ) {
-                System.err.println ( somePlatformsDontSupportScreenshots.getMessage ( ) );
-            }
-        }
-        driver.quit ( );
-    }
 
 }

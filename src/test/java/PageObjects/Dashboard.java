@@ -18,52 +18,51 @@ public class Dashboard {
 
     WebDriver driver;
 
-    public Dashboard(WebDriver driver) {
-       PageFactory.initElements(driver,this);
-       this.driver=driver;
-       }
+    public Dashboard ( WebDriver driver ) {
+        PageFactory.initElements ( driver , this );
+        this.driver = driver;
+    }
 
 
-    @FindBy(how = How.XPATH,using = "//div[@class='logo-holder']")
+    @FindBy(how = How.XPATH, using = "//div[@class='logo-holder']")
     private WebElement JBLLogo;
 
-    @FindBy(how = How.XPATH,using = "//i[@class='icon icon-settings']")
+    @FindBy(how = How.XPATH, using = "//i[@class='icon icon-settings']")
     public WebElement settings;
 
-    @FindBy(how = How.XPATH,using = "//*[@class='device-status total-devices']/span")
+    @FindBy(how = How.XPATH, using = "//*[@class='device-status total-devices']/span")
     private WebElement totalDevicesCount;
 
-    @FindBy(how = How.XPATH,using = "//*[@class='device-status error-devices']/span")
+    @FindBy(how = How.XPATH, using = "//*[@class='device-status error-devices']/span")
     private WebElement errorDevicesCount;
 
-    @FindBy(how = How.XPATH,using = "//*[@class='device-status offline-devices']/span")
+    @FindBy(how = How.XPATH, using = "//*[@class='device-status offline-devices']/span")
     private WebElement offlineDevicesCount;
 
-    @FindBy(how = How.XPATH,using = "//*[@class='device-status online-devices']/span")
+    @FindBy(how = How.XPATH, using = "//*[@class='device-status online-devices']/span")
     private WebElement onlineDevicesCount;
 
 
-    public void  deviceTotalCountSumofOnlineOfflinAndErrordevices(){
-        Utilis utilis=new Utilis();
-        utilis.elementIsDisplayed(driver,totalDevicesCount);
-        utilis.elementIsDisplayed(driver,errorDevicesCount);
-        utilis.elementIsDisplayed(driver,offlineDevicesCount);
-        utilis.elementIsDisplayed(driver,onlineDevicesCount);
-        int totalDevices=Integer.parseInt(totalDevicesCount.getText());
-        int errorDevices=Integer.parseInt(errorDevicesCount.getText());
-        int offlineDevices=Integer.parseInt(offlineDevicesCount.getText());
-        int onlineDevices= Integer.parseInt(onlineDevicesCount.getText());
-        if(totalDevices==errorDevices+offlineDevices+onlineDevices){
-            Assert.assertTrue(true);
-        }else
-        {
-            Assert.assertTrue(false);
+    public void deviceTotalCountSumofOnlineOfflinAndErrordevices ( ) {
+        Utilis utilis = new Utilis ( );
+        utilis.elementIsDisplayed ( driver , totalDevicesCount );
+        utilis.elementIsDisplayed ( driver , errorDevicesCount );
+        utilis.elementIsDisplayed ( driver , offlineDevicesCount );
+        utilis.elementIsDisplayed ( driver , onlineDevicesCount );
+        int totalDevices = Integer.parseInt ( totalDevicesCount.getText ( ) );
+        int errorDevices = Integer.parseInt ( errorDevicesCount.getText ( ) );
+        int offlineDevices = Integer.parseInt ( offlineDevicesCount.getText ( ) );
+        int onlineDevices = Integer.parseInt ( onlineDevicesCount.getText ( ) );
+        if ( totalDevices == errorDevices + offlineDevices + onlineDevices ) {
+            Assert.assertTrue ( true );
+        } else {
+            Assert.assertTrue ( false );
         }
     }
 
-    public void logoIsDisplayed(){
-        Utilis utilis=new Utilis();
-        utilis.elementIsDisplayed(driver,JBLLogo);
+    public void logoIsDisplayed ( ) {
+        Utilis utilis = new Utilis ( );
+        utilis.elementIsDisplayed ( driver , JBLLogo );
     }
 
 }
