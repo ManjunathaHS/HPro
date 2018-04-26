@@ -19,7 +19,7 @@ import cucumber.api.java.Before;
 //@author jayaprakashs on 4/10/2018
 
 
-public class BrowserHooks extends BaseUtil{
+public class BrowserHooks extends BaseUtil {
 
     private BaseUtil baseUtil;
 
@@ -28,23 +28,21 @@ public class BrowserHooks extends BaseUtil{
         this.baseUtil = baseUtil;
     }
 
-    private static boolean startBrowser = false;
     public static Properties props = new Properties ( );
 
 
     @Before
     public void openSite ( ) throws MalformedURLException, IOException {
-      //  if ( !startBrowser ) {
-            System.setProperty ( "webdriver.chrome.driver" , "src/test/resources/drivers/chromedriver.exe" );
-            FileInputStream propsfile = new FileInputStream ( "src/test/resources/TestData.properties" );
-            props.load ( propsfile );
-            ChromeOptions options = new ChromeOptions ( );
-            options.addArguments ( "--disable-extensions" );
-            baseUtil.driver = new ChromeDriver ( options );
-            baseUtil.driver.manage ( ).window ( ).maximize ( );
-            baseUtil.driver.manage ( ).deleteAllCookies ( );
-           // startBrowser = true;
-       // }
+        System.setProperty ( "webdriver.chrome.driver" , "src/test/resources/drivers/chromedriver.exe" );
+        FileInputStream propsfile = new FileInputStream ( "src/test/resources/TestData.properties" );
+        props.load ( propsfile );
+        ChromeOptions options = new ChromeOptions ( );
+        options.addArguments ( "--disable-extensions" );
+        baseUtil.driver = new ChromeDriver ( options );
+        baseUtil.driver.manage ( ).window ( ).maximize ( );
+        baseUtil.driver.manage ( ).deleteAllCookies ( );
+
+
     }
 
     @After

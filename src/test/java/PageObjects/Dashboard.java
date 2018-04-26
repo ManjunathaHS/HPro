@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+
 import static org.assertj.core.api.Assertions.*;
 
 
@@ -98,7 +99,7 @@ public class Dashboard {
         utilis.elementIsDisplayed ( driver , deviceOneUnMuted );
     }
 
-    public void clickOnMutedDevice(){
+    public void clickOnMutedDevice ( ) {
         utilis.click ( driver , deviceOneUnMuted );
         driver.switchTo ( ).activeElement ( );
     }
