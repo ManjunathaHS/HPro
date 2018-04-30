@@ -105,5 +105,27 @@ public class Login {
     }
 
 
+    // Click on Reboot icon and verify the notification
+    @When("^User selects the device which is online and click on Reboot icon$")
+    public void userSelectsTheDeviceWhichIsOnlineAndClickOnRebootIcon ( ) throws Throwable {
+        dashboard.clickOnDeviceToReboot ();
 
+    }
+
+    @Then("^A popup should be displayed with the message Do you want to reboot the device$")
+    public void aPopupShouldBeDisplayedWithTheMessageDoYouWantToRebootTheDevice ( ) throws Throwable {
+        baseUtil.driver.switchTo ().activeElement ();
+        Thread.sleep ( 2000 );
+        //dashboard.verifyMessageDisplayedOnPop ();
+    }
+
+    @When("^User clicks on Yes button displayed in popup to reboot the device$")
+    public void userClicksOnYesButtonDisplayedInPopupToRebootTheDevice ( ) throws Throwable {
+        dashboard.clickOnYesButton ();
+    }
+
+    @Then("^Reboot should be initiated message should be displayed for the selected devices in notification$")
+    public void rebootShouldBeInitiatedMessageShouldBeDisplayedForTheSelectedDevicesInNotification ( ) throws Throwable {
+        dashboard.verifyOneNotificationIsDisplayed ();
+    }
 }

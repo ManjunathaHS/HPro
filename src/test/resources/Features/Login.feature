@@ -23,3 +23,9 @@ Feature: Verify login feature
     Then A popup should be displayed with the message Are you sure you want to unmute the device
     When User clicks on Yes button displayed in popup to Unmute the device
     Then Device icon status should be changed from Unmute to Mute
+
+  Scenario: Click on Reboot icon and verify the notification
+    When User selects the device which is online and click on Reboot icon
+    Then A popup should be displayed with the message Do you want to reboot the device
+    When User clicks on Yes button displayed in popup to reboot the device
+    Then Reboot should be initiated message should be displayed for the selected devices in notification

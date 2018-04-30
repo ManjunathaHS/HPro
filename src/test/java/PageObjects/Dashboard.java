@@ -53,12 +53,20 @@ public class Dashboard {
     @FindBy(how = How.ID, using = "no")
     private WebElement noButton;
 
-
     @FindBy(how = How.XPATH, using = "//table[@class='devicelist-table']/tbody/tr[1]/td/span/span/a/span[@class='icon icon-mic-off']")
     private WebElement deviceOneMuted;
 
     @FindBy(how = How.XPATH, using = "//table[@class='devicelist-table']/tbody/tr[1]/td/span/span/a/span[@class='icon icon-mic']")
     private WebElement deviceOneUnMuted;
+
+    @FindBy(how = How.XPATH,using = "//table[@class='devicelist-table']/tbody/tr[1]/td/span/span/a/span[@id='reboot']")
+    private WebElement deviceOneReboot;
+
+    @FindBy(how = How.CLASS_NAME,using = "icon icon-notifications-none")
+    private WebElement notifications;
+
+    @FindBy(how = How.XPATH,using = "//small[@class='notification-count' and text()='1']")
+    private WebElement oneNotification;
 
 
     public void deviceTotalCountSumofOnlineOfflinAndErrordevices ( ) {
@@ -108,5 +116,13 @@ public class Dashboard {
         utilis.elementIsDisplayed ( driver , deviceOneMuted );
     }
 
+    public void clickOnDeviceToReboot(){
+        utilis.click ( driver , deviceOneReboot );
+
+    }
+
+    public void verifyOneNotificationIsDisplayed(){
+        utilis.elementIsDisplayed ( driver,oneNotification );
+    }
 
 }
