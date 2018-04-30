@@ -18,6 +18,7 @@ import com.relevantcodes.extentreports.DisplayOrder;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/Features/Login.feature",
+        tags = "@smoke",
         glue = "stepdefinitions",
         plugin = {"com.cucumber.listener.ExtentCucumberFormatter"},
         monochrome = true)

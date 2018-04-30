@@ -1,8 +1,11 @@
+@smoke
 Feature: Verify login feature
 
   Background:
     Given Properties with devices in different status online, offline, error and updates and also device simulator is up and running
     When Login to Site property admin dashboard
+    |manjunatha.s@harman.com|
+    |SB0Yd8o_S3G|
     Then Site Property name should be displayed
 
   Scenario: Verify property admin able to login into property site and verify the site name

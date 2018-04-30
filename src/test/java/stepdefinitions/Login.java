@@ -8,6 +8,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+import java.util.List;
+
 /**
  * @author jayaprakashs on 4/10/2018
  */
@@ -31,9 +33,9 @@ public class Login {
     }
 
     @When("^Login to Site property admin dashboard$")
-    public void login_to_Site_property_admin_dashboard ( ) throws Throwable {
+    public void login_to_Site_property_admin_dashboard ( List<String> credn) throws Throwable {
         baseUtil.driver.get ( "https://hcsdashboardappqan.azurewebsites.net" );
-        loginPage.inputUserNameAndPassword ( "manjunatha.s@harman.com" , "SB0Yd8o_S3G" );
+        loginPage.inputUserNameAndPassword ( credn.get ( 0 ), credn.get ( 1 ) );
         loginPage.clickOnSign ( );
     }
 
