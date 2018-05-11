@@ -103,7 +103,8 @@ public class Dashboard {
         utilis.click ( driver , yesButton );
     }
 
-    public void verifyDeviceIsUnmuted ( ) {
+    public void verifyDeviceIsUnmuted ( ) throws InterruptedException {
+        Thread.sleep(2000);
         utilis.elementIsDisplayed ( driver , deviceOneUnMuted );
     }
 
