@@ -12,11 +12,12 @@ import static org.assertj.core.api.Assertions.*;
 
 
 /**
- * @author jayaprakashs on 4/9/2018
+ * @author manju on 4/9/2018
  */
 public class Dashboard {
 
     WebDriver driver;
+    static int deviceDefaultCount=0;
 
     public Dashboard ( WebDriver driver ) {
         PageFactory.initElements ( driver , this );
@@ -78,10 +79,27 @@ public class Dashboard {
         int errorDevices = Integer.parseInt ( errorDevicesCount.getText ( ) );
         int offlineDevices = Integer.parseInt ( offlineDevicesCount.getText ( ) );
         int onlineDevices = Integer.parseInt ( onlineDevicesCount.getText ( ) );
+                //Verify Total device count should be sum of offline,error and online devices.
         if ( totalDevices == errorDevices + offlineDevices + onlineDevices ) {
             Assert.assertTrue ( true );
         } else {
             Assert.assertTrue ( false );
+        }
+
+    }
+
+    public void totalDeviceCount()
+    {
+        utilis.elementIsDisplayed(driver, totalDevicesCount);
+        int totalDevices = Integer.parseInt ( totalDevicesCount.getText ( ) );
+        if (deviceDefaultCount == totalDevices) {
+            Assert.assertTrue(true);
+            System.out.println("Devices are not yet Loaded OR Registerd for the Property");
+        }
+        else
+        {
+            Assert.assertTrue(false);
+            System.out.println("Total Devices loaded for this property are:"+totalDevices);
         }
     }
 
@@ -104,7 +122,7 @@ public class Dashboard {
     }
 
     public void verifyDeviceIsUnmuted ( ) throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         utilis.elementIsDisplayed ( driver , deviceOneUnMuted );
     }
 

@@ -4,6 +4,7 @@ import PageObjects.Dashboard;
 import PageObjects.LoginPage;
 import Utilis.BaseUtil;
 import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -127,5 +128,11 @@ public class Login {
     @Then("^Reboot should be initiated message should be displayed for the selected devices in notification$")
     public void rebootShouldBeInitiatedMessageShouldBeDisplayedForTheSelectedDevicesInNotification ( ) throws Throwable {
         dashboard.verifyOneNotificationIsDisplayed ();
+    }
+
+    @And("^Total device count should  be Greater than Zero$")
+    public void totalDeviceCountShouldBeGreaterThanZero() throws Throwable {
+        dashboard.totalDeviceCount();
+        /* throw new PendingException(); */
     }
 }

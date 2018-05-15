@@ -32,7 +32,8 @@ public class Runner{
         Boolean replaceExisting = false;
         DateFormat dateFormat = new SimpleDateFormat ( "yyyyMMdd_HHmm" );
         Date date = new Date ( );
-        String reportFilePath = "output/Reports/" + "Sample" + dateFormat.format ( date ) + ".html";
+       // String reportFilePath = "output/Reports/" + "Sample" + dateFormat.format ( date ) + ".html";
+        String reportFilePath = "output/Reports/" + "Report"+".html";
         ExtentCucumberFormatter.initiateExtentCucumberFormatter ( new File ( reportFilePath ) , replaceExisting ,
                 NEWEST_FIRST );
         ExtentCucumberFormatter.loadConfig ( new File ( "src/test/resources/extent-config.xml" ) );
