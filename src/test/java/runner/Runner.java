@@ -16,7 +16,7 @@ import com.relevantcodes.extentreports.DisplayOrder;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/Features/Login.feature",
+        features = "src/test/resources/Features/DeviceDetails.feature",
         tags = "@smoke",
         glue = "stepdefinitions",
         plugin = {"com.cucumber.listener.ExtentCucumberFormatter"},
@@ -24,7 +24,6 @@ import com.relevantcodes.extentreports.DisplayOrder;
 
 
 public class Runner{
-
     @BeforeClass
     public static void setup ( ) {
         ExtentCucumberFormatter.initiateExtentCucumberFormatter ( );
@@ -32,8 +31,8 @@ public class Runner{
         Boolean replaceExisting = false;
         DateFormat dateFormat = new SimpleDateFormat ( "yyyyMMdd_HHmm" );
         Date date = new Date ( );
-       // String reportFilePath = "output/Reports/" + "Sample" + dateFormat.format ( date ) + ".html";
-        String reportFilePath = "output/Reports/" + "Report"+".html";
+        String reportFilePath = "output/Reports/" + "EVPA" + dateFormat.format ( date ) + ".html";
+       // String reportFilePath = "output/Reports/" + "Report"+".html";
         ExtentCucumberFormatter.initiateExtentCucumberFormatter ( new File ( reportFilePath ) , replaceExisting ,
                 NEWEST_FIRST );
         ExtentCucumberFormatter.loadConfig ( new File ( "src/test/resources/extent-config.xml" ) );

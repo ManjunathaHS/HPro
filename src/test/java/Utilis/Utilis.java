@@ -20,13 +20,22 @@ public class Utilis {
 
     // Wait and assert element is displayed
     public void elementIsDisplayed ( WebDriver driver , WebElement element ) {
-        waitForElementVisible ( driver , element , 30 );
+        waitForElementVisible ( driver , element , 60 );
         Assert.assertTrue ( element.isDisplayed ( ) );
     }
 
+    public void verifyTitleOfPopupWindowandClickOnYesOrNo(WebDriver driver,WebElement element,String popupTitle,WebElement yesOrNo){
+        waitForElementVisible ( driver , element , 60 );
+        Assert.assertTrue(element.getText().equalsIgnoreCase(popupTitle));
+        click(driver,yesOrNo);
+    }
+    public String getAtrributeValue(WebDriver driver,WebElement element,String attributeValue){
+        waitForElementVisible ( driver , element , 60 );
+        return element.getAttribute(attributeValue);
+    }
     // Wait and assert element is enabled
     public void elementIsEnabled ( WebDriver driver , WebElement element ) {
-        waitForElementVisible ( driver , element , 30 );
+        waitForElementVisible ( driver , element , 60 );
         Assert.assertTrue ( element.isEnabled ( ) );
     }
 
@@ -146,6 +155,7 @@ public class Utilis {
 
         try {
             waitForElementVisible ( driver , element , 10 );
+            //element.clear();
             element.sendKeys ( keysToEnter );
         } catch ( TimeoutException e ) {
             e.printStackTrace ( );

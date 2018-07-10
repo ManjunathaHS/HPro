@@ -8,6 +8,8 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import java.util.List;
+
 import static org.assertj.core.api.Assertions.*;
 
 
@@ -69,6 +71,12 @@ public class Dashboard {
     @FindBy(how = How.XPATH,using = "//small[@class='notification-count' and text()='1']")
     private WebElement oneNotification;
 
+    @FindBy(how = How.XPATH,using = "//table[@class='devicelist-table']/tbody/tr[1]/td[2]//a/div")
+    private WebElement deviceName;
+
+    //XPath of PropertySettings icon in Dashboard
+    @FindBy(how = How.XPATH, using = "//div[@class='top-bar']//a[@href='/propertySettings']//i[@class='icon icon-settings']")
+    private WebElement propertySettingIcon;
 
     public void deviceTotalCountSumofOnlineOfflinAndErrordevices ( ) {
         utilis.elementIsDisplayed ( driver , totalDevicesCount );
@@ -79,7 +87,7 @@ public class Dashboard {
         int errorDevices = Integer.parseInt ( errorDevicesCount.getText ( ) );
         int offlineDevices = Integer.parseInt ( offlineDevicesCount.getText ( ) );
         int onlineDevices = Integer.parseInt ( onlineDevicesCount.getText ( ) );
-                //Verify Total device count should be sum of offline,error and online devices.
+        //Verify Total device count should be sum of offline,error and online devices.
         if ( totalDevices == errorDevices + offlineDevices + onlineDevices ) {
             Assert.assertTrue ( true );
         } else {
@@ -100,20 +108,24 @@ public class Dashboard {
         {
             Assert.assertTrue(false);
             System.out.println("Total Devices loaded for this property are:"+totalDevices);
+
         }
     }
+
 
     public void logoIsDisplayed ( ) {
         utilis.elementIsDisplayed ( driver , JBLLogo );
     }
 
-    public void clickOnUmutedDevice ( ) {
+    public void clickOnUmutedDevice ( )
+    {
         utilis.click ( driver , deviceOneMuted );
 
     }
 
 
-    public void verifyMessageDisplayedOnPop ( ) {
+    public void verifyMessageDisplayedOnPop ( )
+    {
         assertThat ( messageOnPopup.getText ( ) ).containsIgnoringCase ( "Are you sure you wish to Unmute the device" );
     }
 
@@ -139,6 +151,19 @@ public class Dashboard {
         utilis.click ( driver , deviceOneReboot );
 
     }
+
+    public void clickOnDeviceName() throws InterruptedException {
+        //find the online device
+        utilis.click(driver, deviceName);
+        Thread.sleep(3000);
+
+    }
+    //click on setting icon
+    public void clickonPropertySettings() throws InterruptedException {
+        utilis.waitForElement(driver, propertySettingIcon, 2000);
+        utilis.click(driver, propertySettingIcon);
+        utilis.click(driver, propertySettingIcon);
+       }
 
     public void verifyOneNotificationIsDisplayed(){
         utilis.elementIsDisplayed ( driver,oneNotification );

@@ -29,8 +29,12 @@ public class LoginPage {
     @FindBy(how = How.ID, using = "next")
     private WebElement signButton;
 
+    @FindBy(how =How.XPATH,using = "/html/body/div[2]/div/div[1]")
+    private WebElement textName;
+
     public void inputUserNameAndPassword ( String userName , String password ) {
         Utilis utilis = new Utilis ( );
+        utilis.elementIsDisplayed(driver , textName);
         utilis.elementIsDisplayed ( driver , userNameTextBox );
         utilis.elementIsDisplayed ( driver , passwordTextBox );
         userNameTextBox.sendKeys ( userName );
