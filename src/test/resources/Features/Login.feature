@@ -30,6 +30,13 @@ Feature: Verify login feature
     When User clicks on Yes button displayed in popup to reboot the device
     Then Reboot should be initiated message should be displayed for the selected devices in notification
 
-  Scenario: Verify the Total Devices count is Greater than Zero
-    And Total device count should  be Greater than Zero
+  #Scenario: Verify the Total Devices count is Greater than Zero
+   # When Get the total devices count from menu bar
+    #And Get the total devices count from the device table
+    #Then Verify the total devices count matches from menu bar with device table
+
+
+    #Scenario: Multiple devices mute or unmute
+
+
 

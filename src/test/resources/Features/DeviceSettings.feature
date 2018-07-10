@@ -11,7 +11,6 @@ Feature: Verify device settings
   Scenario: Edit Voiceagent/WakeWard details on property Level
     When Click on PropertySetting icon on Dashboard screen
     And Select VoiceAgent address and update VoiceAddress
-    Then Click on ApplayChange button
-    #And Verify Confirmation message pop-up
-    When User clicks on Yes button displayed in popup to update VoiceAgent address
-    #Then VoiceAgent address should be updated at property level and displayed the notificatio
+    Then Click on ApplyChange button
+    And Verify Confirmation message pop-up and click on yes button
+    And Verify Voiceagent URL is updated

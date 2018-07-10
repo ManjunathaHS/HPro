@@ -24,9 +24,9 @@ public class Utilis {
         Assert.assertTrue ( element.isDisplayed ( ) );
     }
 
-    public void verifyTitleOfPopupWindowandClickOnYesOrNo(WebDriver driver,WebElement element,String popupTitle,WebElement yesOrNo){
-        waitForElementVisible ( driver , element , 60 );
-        Assert.assertTrue(element.getText().equalsIgnoreCase(popupTitle));
+    public void verifyTitleOfPopupWindowandClickOnYesOrNo(WebDriver driver,WebElement titleElement,String popupTitle,WebElement yesOrNo){
+        waitForElementVisible ( driver , titleElement , 60 );
+        Assert.assertTrue(titleElement.getText().equalsIgnoreCase(popupTitle));
         click(driver,yesOrNo);
     }
     public String getAtrributeValue(WebDriver driver,WebElement element,String attributeValue){

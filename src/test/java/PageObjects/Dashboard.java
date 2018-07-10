@@ -75,7 +75,7 @@ public class Dashboard {
     private WebElement deviceName;
 
     //XPath of PropertySettings icon in Dashboard
-    @FindBy(how = How.XPATH, using = "//div[@class='top-bar']//a[@href='/propertySettings']//i[@class='icon icon-settings']")
+    @FindBy(how = How.CSS,using = "i.icon.icon-settings")
     private WebElement propertySettingIcon;
 
     public void deviceTotalCountSumofOnlineOfflinAndErrordevices ( ) {
@@ -162,7 +162,7 @@ public class Dashboard {
     public void clickonPropertySettings() throws InterruptedException {
         utilis.waitForElement(driver, propertySettingIcon, 2000);
         utilis.click(driver, propertySettingIcon);
-        utilis.click(driver, propertySettingIcon);
+        //utilis.click(driver, propertySettingIcon);
        }
 
     public void verifyOneNotificationIsDisplayed(){
