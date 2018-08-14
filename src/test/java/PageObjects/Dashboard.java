@@ -1,12 +1,14 @@
 package PageObjects;
 
 import Utilis.Utilis;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import stepdefinitions.DeviceDetails;
 
 import java.util.List;
 
@@ -19,7 +21,8 @@ import static org.assertj.core.api.Assertions.*;
 public class Dashboard {
 
     WebDriver driver;
-    static int deviceDefaultCount=0;
+    static int    deviceDefaultCount =0;
+    static Logger log                =Logger.getLogger ( Dashboard.class );
 
     public Dashboard ( WebDriver driver ) {
         PageFactory.initElements ( driver , this );
@@ -89,8 +92,12 @@ public class Dashboard {
         int onlineDevices = Integer.parseInt ( onlineDevicesCount.getText ( ) );
         //Verify Total device count should be sum of offline,error and online devices.
         if ( totalDevices == errorDevices + offlineDevices + onlineDevices ) {
+            log.info ( "sum of devices is correct" );
             Assert.assertTrue ( true );
+
+
         } else {
+            log.info ( "sum of devices is incorrect" );
             Assert.assertTrue ( false );
         }
 
@@ -102,12 +109,12 @@ public class Dashboard {
         int totalDevices = Integer.parseInt ( totalDevicesCount.getText ( ) );
         if (deviceDefaultCount == totalDevices) {
             Assert.assertTrue(true);
-            System.out.println("Devices are not yet Loaded OR Registerd for the Property");
+            log.info ("Devices are not yet Loaded OR Registerd for the Property");
         }
         else
         {
             Assert.assertTrue(false);
-            System.out.println("Total Devices loaded for this property are:"+totalDevices);
+            log.info ("Total Devices loaded for this property are:"+totalDevices);
 
         }
     }

@@ -1,6 +1,7 @@
 package Utilis;
 
 import com.cucumber.listener.ExtentCucumberFormatter;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -15,6 +16,9 @@ import java.util.concurrent.TimeUnit;
 public class Utilis {
 
 
+    //  Logger
+
+    static Logger  log    = Logger.getLogger ( Utilis.class );
     // Defining of Basic selenium actions
     public Actions action = null;
 
@@ -22,27 +26,38 @@ public class Utilis {
     public void elementIsDisplayed ( WebDriver driver , WebElement element ) {
         waitForElementVisible ( driver , element , 60 );
         Assert.assertTrue ( element.isDisplayed ( ) );
+        log.info ( "Element is displayed" );
+        ExtentCucumberFormatter.setTestRunnerOutput ( Utilis.class.getSimpleName ( ) );
+        ExtentCucumberFormatter.setTestRunnerOutput ( "Element is displayed" );
     }
 
-    public void verifyTitleOfPopupWindowandClickOnYesOrNo(WebDriver driver,WebElement titleElement,String popupTitle,WebElement yesOrNo){
+    public void verifyTitleOfPopupWindowandClickOnYesOrNo ( WebDriver driver , WebElement titleElement , String popupTitle , WebElement yesOrNo ) {
         waitForElementVisible ( driver , titleElement , 60 );
-        Assert.assertTrue(titleElement.getText().equalsIgnoreCase(popupTitle));
-        click(driver,yesOrNo);
+        Assert.assertTrue ( titleElement.getText ( ).equalsIgnoreCase ( popupTitle ) );
+        click ( driver , yesOrNo );
     }
-    public String getAtrributeValue(WebDriver driver,WebElement element,String attributeValue){
+
+    public String getAtrributeValue ( WebDriver driver , WebElement element , String attributeValue ) {
         waitForElementVisible ( driver , element , 60 );
-        return element.getAttribute(attributeValue);
+        return element.getAttribute ( attributeValue );
     }
+
     // Wait and assert element is enabled
     public void elementIsEnabled ( WebDriver driver , WebElement element ) {
         waitForElementVisible ( driver , element , 60 );
         Assert.assertTrue ( element.isEnabled ( ) );
+        log.info ( "Element is Enabled" );
+        ExtentCucumberFormatter.setTestRunnerOutput ( Utilis.class.getSimpleName ( ) );
+        ExtentCucumberFormatter.setTestRunnerOutput ( "Element is Enabled" );
     }
 
     // Wait and assert element is not enabled
     public void elementIsNotEnabled ( WebDriver driver , WebElement element ) {
         waitForElementVisible ( driver , element , 30 );
         Assert.assertFalse ( element.isEnabled ( ) );
+        log.info ( "Element is disabled" );
+        ExtentCucumberFormatter.setTestRunnerOutput ( Utilis.class.getSimpleName ( ) );
+        ExtentCucumberFormatter.setTestRunnerOutput ( "Element is disabled" );
     }
 
     public void wait ( WebDriver driver , long timeInSeconds ) {
@@ -57,7 +72,7 @@ public class Utilis {
 
     // 
     public void numberOfClicks ( int click , WebElement item ) {
-        for (int i = 0; i < click; i++) {
+        for ( int i = 0; i < click; i++ ) {
             item.click ( );
         }
 
@@ -72,7 +87,7 @@ public class Utilis {
     }
 
     public void explictWaitForElement ( WebDriver driver , WebElement item , int timeout ) {
-        WebElement element;
+        WebElement    element;
         WebDriverWait wait = new WebDriverWait ( driver , timeout );
         element = wait.until ( ExpectedConditions.elementToBeClickable ( item ) );
     }
@@ -93,8 +108,10 @@ public class Utilis {
             wait.ignoring ( Exception.class );
             wait.until ( ExpectedConditions.visibilityOf ( element ) );
         } catch ( TimeoutException e ) {
-            System.out.println ( "Elemet is not visible" );
-            System.out.println ( e.getMessage ( ) );
+            log.info ( "Elemet is not visible" );
+            log.info ( e.getMessage ( ) );
+            ExtentCucumberFormatter.setTestRunnerOutput ( "Elemet is not visible" );
+            ExtentCucumberFormatter.setTestRunnerOutput ( e.getMessage ( ) );
             throw e;
         }
     }
@@ -107,6 +124,8 @@ public class Utilis {
             wait.ignoring ( Exception.class );
             wait.until ( ExpectedConditions.invisibilityOfElementLocated ( By.xpath ( locator ) ) );
         } catch ( TimeoutException e ) {
+            log.info ( "Element is still visible" );
+            ExtentCucumberFormatter.setTestRunnerOutput ( Utilis.class.getSimpleName ( ) );
             ExtentCucumberFormatter.setTestRunnerOutput ( "Element is still visible" );
             throw e;
         }
@@ -120,6 +139,8 @@ public class Utilis {
             wait.ignoring ( Exception.class );
             wait.until ( ExpectedConditions.invisibilityOfElementLocated ( By.className ( locator ) ) );
         } catch ( TimeoutException e ) {
+            log.info ( "Element is still visible" );
+            ExtentCucumberFormatter.setTestRunnerOutput ( Utilis.class.getSimpleName ( ) );
             ExtentCucumberFormatter.setTestRunnerOutput ( "Element is still visible" );
             throw e;
         }
@@ -133,6 +154,8 @@ public class Utilis {
             wait.ignoring ( Exception.class );
             wait.until ( ExpectedConditions.invisibilityOfElementLocated ( By.id ( locator ) ) );
         } catch ( TimeoutException e ) {
+            log.info ( "Element is still visible" );
+            ExtentCucumberFormatter.setTestRunnerOutput ( Utilis.class.getSimpleName ( ) );
             ExtentCucumberFormatter.setTestRunnerOutput ( "Element is still visible" );
             throw e;
         }
@@ -170,9 +193,14 @@ public class Utilis {
             waitForElementVisible ( driver , element , 10 );
             action.sendKeys ( keysToEnter ).build ( ).perform ( );
         } catch ( TimeoutException e ) {
+            log.info ( "Element is not visible" );
+            ExtentCucumberFormatter.setTestRunnerOutput ( Utilis.class.getSimpleName ( ) );
             ExtentCucumberFormatter.setTestRunnerOutput ( "Element not visible" );
+
             throw e;
         } catch ( StaleElementReferenceException ex ) {
+            log.info ( "Element not present on page" );
+            ExtentCucumberFormatter.setTestRunnerOutput ( Utilis.class.getSimpleName ( ) );
             ExtentCucumberFormatter.setTestRunnerOutput ( "Element not present on page" );
             throw ex;
         }
@@ -185,7 +213,12 @@ public class Utilis {
         try {
             waitForElementClickable ( driver , element , 50 );
             element.click ( );
+            log.info ( "Element clicked" );
+            ExtentCucumberFormatter.setTestRunnerOutput ( Utilis.class.getSimpleName ( ) );
+            ExtentCucumberFormatter.setTestRunnerOutput ( "Element clicked" );
         } catch ( TimeoutException e ) {
+            log.info ( "Element not visible to click" );
+            ExtentCucumberFormatter.setTestRunnerOutput ( Utilis.class.getSimpleName ( ) );
             ExtentCucumberFormatter.setTestRunnerOutput ( "Element not visible to click" );
             throw e;
         }
@@ -199,6 +232,8 @@ public class Utilis {
             wait.ignoring ( Exception.class );
             wait.until ( ExpectedConditions.elementToBeClickable ( element ) );
         } catch ( TimeoutException e ) {
+            log.info ( "Element not clickable" );
+            ExtentCucumberFormatter.setTestRunnerOutput ( Utilis.class.getSimpleName ( ) );
             ExtentCucumberFormatter.setTestRunnerOutput ( "Element not clickable" );
             throw e;
         }
@@ -213,6 +248,8 @@ public class Utilis {
             wait.ignoring ( Exception.class );
             wait.until ( ExpectedConditions.visibilityOf ( element ) );
         } catch ( TimeoutException e ) {
+            log.info ( "Element not visible" );
+            ExtentCucumberFormatter.setTestRunnerOutput ( Utilis.class.getSimpleName ( ) );
             ExtentCucumberFormatter.setTestRunnerOutput ( "Element not visible" );
             throw e;
         }

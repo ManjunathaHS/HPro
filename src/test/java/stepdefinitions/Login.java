@@ -9,6 +9,8 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.apache.log4j.Logger;
+
 import java.util.List;
 
 /**
@@ -22,7 +24,7 @@ public class Login {
     DetailsPage detailsPage;
      PropertySettingsPage settingPage;
 
-
+    static Logger log =Logger.getLogger ( Login.class );
     public Login ( BaseUtil baseUtil ) {
         this.baseUtil = baseUtil;
         loginPage = new LoginPage ( baseUtil.driver );
@@ -40,7 +42,10 @@ public class Login {
     public void login_to_Site_property_admin_dashboard ( List<String> credn) throws Throwable {
         baseUtil.driver.get ( "https://hcsdashboardappqan.azurewebsites.net" );
         loginPage.inputUserNameAndPassword ( credn.get ( 0 ), credn.get ( 1 ) );
+        log.info ("user name "+credn.get ( 0 ) );
+        log.info ( "user password"+credn.get ( 0 ) );
         loginPage.clickOnSign ( );
+        log.info ( "user clicked on sign" );
     }
 
     @Then("^Site Property name should be displayed$")
@@ -51,6 +56,7 @@ public class Login {
     @Then("^JBL logo should be displayed$")
     public void jbl_logo_should_be_displayed ( ) throws Throwable {
         dashboard.logoIsDisplayed ( );
+        log.info ( "user has logged and Dashboard is displayed" );
 
     }
 

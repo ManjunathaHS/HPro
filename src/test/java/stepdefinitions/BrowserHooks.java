@@ -37,6 +37,7 @@ public class BrowserHooks extends BaseUtil {
         FileInputStream propsfile = new FileInputStream ( "src/test/resources/TestData.properties" );
         props.load ( propsfile );
         ChromeOptions options = new ChromeOptions ( );
+        //options.addArguments ( "--headless " );
         options.addArguments ( "--disable-extensions" );
         baseUtil.driver = new ChromeDriver ( options );
         baseUtil.driver.manage ( ).window ( ).maximize ( );
