@@ -15,9 +15,9 @@ import com.relevantcodes.extentreports.DisplayOrder;
 
 @RunWith( Cucumber.class )
 @CucumberOptions(
-        features = "src/test/resources/Features/",
-        //tags = "@smoke",
-        glue = "stepdefinitions",
+        features = { "classpath:Features" },
+        glue = { "classpath:stepdefinitions" },
+        tags = "@smoke",
         plugin = {"com.cucumber.listener.ExtentCucumberFormatter"},
         monochrome = true )
 

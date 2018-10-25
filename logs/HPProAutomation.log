@@ -1,180 +1,147 @@
-2018-07-13 14:45:23 INFO  DeviceDetails:38 - Device clicked
-2018-07-13 14:45:27 INFO  DeviceDetails:52 - updated placement details
-2018-07-25 11:21:42 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:21:42 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:21:43 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:21:46 INFO  Login:45 - user name manjunatha.s@harman.com
-2018-07-25 11:21:46 INFO  Login:46 - user passwordmanjunatha.s@harman.com
-2018-07-25 11:21:46 INFO  Utilis:216 - Element clicked
-2018-07-25 11:21:46 INFO  Login:48 - user clicked on sign
-2018-07-25 11:22:02 INFO  Utilis:216 - Element clicked
-2018-07-25 11:22:05 INFO  DeviceDetails:37 - Device clicked
-2018-07-25 11:22:05 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:22:06 INFO  Utilis:216 - Element clicked
-2018-07-25 11:22:07 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:22:09 INFO  DeviceDetails:51 - updated placement details
-2018-07-25 11:22:09 INFO  Utilis:216 - Element clicked
-2018-07-25 11:22:11 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-2018-07-25 11:22:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-2018-07-25 11:22:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2018-07-25 11:22:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2018-07-25 11:22:11 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/jayaprakashs/.m2/repository/com/relevantcodes/extentreports/2.41.0/extentreports-2.41.0.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-2018-07-25 11:22:41 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:22:41 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:22:41 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:22:46 INFO  Login:45 - user name manjunatha.s@harman.com
-2018-07-25 11:22:46 INFO  Login:46 - user passwordmanjunatha.s@harman.com
-2018-07-25 11:22:46 INFO  Utilis:216 - Element clicked
-2018-07-25 11:22:46 INFO  Login:48 - user clicked on sign
-2018-07-25 11:22:58 INFO  Utilis:216 - Element clicked
-2018-07-25 11:22:58 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:22:59 INFO  Utilis:216 - Element clicked
-2018-07-25 11:23:10 INFO  Utilis:216 - Element clicked
-2018-07-25 11:23:11 INFO  Utilis:216 - Element clicked
-2018-07-25 11:23:13 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-2018-07-25 11:23:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-2018-07-25 11:23:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2018-07-25 11:23:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2018-07-25 11:23:13 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/jayaprakashs/.m2/repository/com/relevantcodes/extentreports/2.41.0/extentreports-2.41.0.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-2018-07-25 11:23:37 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:23:38 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:23:38 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:23:42 INFO  Login:45 - user name manjunatha.s@harman.com
-2018-07-25 11:23:42 INFO  Login:46 - user passwordmanjunatha.s@harman.com
-2018-07-25 11:23:43 INFO  Utilis:216 - Element clicked
-2018-07-25 11:23:43 INFO  Login:48 - user clicked on sign
-2018-07-25 11:23:53 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:23:53 INFO  Login:59 - user has logged and Dashboard is displayed
-2018-07-25 11:23:53 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:23:53 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:23:54 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:23:54 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:23:55 INFO  Dashboard:100 - sum of devices is incorrect
-2018-07-25 11:24:17 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:24:17 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:24:17 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:24:22 INFO  Login:45 - user name manjunatha.s@harman.com
-2018-07-25 11:24:22 INFO  Login:46 - user passwordmanjunatha.s@harman.com
-2018-07-25 11:24:23 INFO  Utilis:216 - Element clicked
-2018-07-25 11:24:23 INFO  Login:48 - user clicked on sign
-2018-07-25 11:25:13 INFO  Utilis:235 - Element not clickable
-2018-07-25 11:25:13 INFO  Utilis:220 - Element not visible to click
-2018-07-25 11:25:51 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:25:51 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:25:52 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:25:56 INFO  Login:45 - user name manjunatha.s@harman.com
-2018-07-25 11:25:56 INFO  Login:46 - user passwordmanjunatha.s@harman.com
-2018-07-25 11:25:56 INFO  Utilis:216 - Element clicked
-2018-07-25 11:25:56 INFO  Login:48 - user clicked on sign
-2018-07-25 11:26:10 INFO  Utilis:216 - Element clicked
-2018-07-25 11:26:13 INFO  Utilis:216 - Element clicked
-2018-07-25 11:26:13 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:26:38 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:26:38 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:26:38 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:26:42 INFO  Login:45 - user name manjunatha.s@harman.com
-2018-07-25 11:26:42 INFO  Login:46 - user passwordmanjunatha.s@harman.com
-2018-07-25 11:26:43 INFO  Utilis:216 - Element clicked
-2018-07-25 11:26:43 INFO  Login:48 - user clicked on sign
-2018-07-25 11:26:57 INFO  Utilis:216 - Element clicked
-2018-07-25 11:27:00 INFO  Utilis:216 - Element clicked
-2018-07-25 11:27:02 INFO  Utilis:29 - Element is displayed
-2018-07-25 11:27:03 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-2018-07-25 11:27:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-2018-07-25 11:27:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2018-07-25 11:27:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2018-07-25 11:27:03 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/jayaprakashs/.m2/repository/com/relevantcodes/extentreports/2.41.0/extentreports-2.41.0.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-2018-07-25 11:27:03 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-2018-07-25 11:27:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-2018-07-25 11:27:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2018-07-25 11:27:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2018-07-25 11:27:03 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/jayaprakashs/.m2/repository/com/relevantcodes/extentreports/2.41.0/extentreports-2.41.0.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-2018-08-14 15:01:19 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:01:19 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:01:20 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:01:24 INFO  Login:45 - user name manjunatha.s@harman.com
-2018-08-14 15:01:24 INFO  Login:46 - user passwordmanjunatha.s@harman.com
-2018-08-14 15:01:26 INFO  Utilis:216 - Element clicked
-2018-08-14 15:01:26 INFO  Login:48 - user clicked on sign
-2018-08-14 15:01:41 INFO  Utilis:216 - Element clicked
-2018-08-14 15:01:44 INFO  DeviceDetails:37 - Device clicked
-2018-08-14 15:01:45 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:01:46 INFO  Utilis:216 - Element clicked
-2018-08-14 15:01:46 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:01:48 INFO  DeviceDetails:51 - updated placement details
-2018-08-14 15:01:49 INFO  Utilis:216 - Element clicked
-2018-08-14 15:01:50 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-2018-08-14 15:01:50 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-2018-08-14 15:01:50 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2018-08-14 15:01:50 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2018-08-14 15:01:50 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/jayaprakashs/.m2/repository/com/relevantcodes/extentreports/2.41.0/extentreports-2.41.0.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-2018-08-14 15:02:29 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:02:29 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:02:29 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:02:33 INFO  Login:45 - user name manjunatha.s@harman.com
-2018-08-14 15:02:33 INFO  Login:46 - user passwordmanjunatha.s@harman.com
-2018-08-14 15:02:34 INFO  Utilis:216 - Element clicked
-2018-08-14 15:02:34 INFO  Login:48 - user clicked on sign
-2018-08-14 15:02:47 INFO  Utilis:216 - Element clicked
-2018-08-14 15:02:48 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:02:49 INFO  Utilis:216 - Element clicked
-2018-08-14 15:03:00 INFO  Utilis:216 - Element clicked
-2018-08-14 15:03:01 INFO  Utilis:216 - Element clicked
-2018-08-14 15:03:03 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-2018-08-14 15:03:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-2018-08-14 15:03:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2018-08-14 15:03:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2018-08-14 15:03:03 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/jayaprakashs/.m2/repository/com/relevantcodes/extentreports/2.41.0/extentreports-2.41.0.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-2018-08-14 15:03:37 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:03:37 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:03:38 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:03:40 INFO  Login:45 - user name manjunatha.s@harman.com
-2018-08-14 15:03:40 INFO  Login:46 - user passwordmanjunatha.s@harman.com
-2018-08-14 15:03:41 INFO  Utilis:216 - Element clicked
-2018-08-14 15:03:41 INFO  Login:48 - user clicked on sign
-2018-08-14 15:03:55 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:03:55 INFO  Login:59 - user has logged and Dashboard is displayed
-2018-08-14 15:03:55 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:03:56 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:03:56 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:03:57 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:03:57 INFO  Dashboard:95 - sum of devices is correct
-2018-08-14 15:04:42 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:04:42 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:04:43 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:04:45 INFO  Login:45 - user name manjunatha.s@harman.com
-2018-08-14 15:04:45 INFO  Login:46 - user passwordmanjunatha.s@harman.com
-2018-08-14 15:04:46 INFO  Utilis:216 - Element clicked
-2018-08-14 15:04:46 INFO  Login:48 - user clicked on sign
-2018-08-14 15:05:01 INFO  Utilis:216 - Element clicked
-2018-08-14 15:05:04 INFO  Utilis:216 - Element clicked
-2018-08-14 15:05:08 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:05:37 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:05:38 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:05:38 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:05:39 INFO  Login:45 - user name manjunatha.s@harman.com
-2018-08-14 15:05:39 INFO  Login:46 - user passwordmanjunatha.s@harman.com
-2018-08-14 15:05:40 INFO  Utilis:216 - Element clicked
-2018-08-14 15:05:40 INFO  Login:48 - user clicked on sign
-2018-08-14 15:06:30 INFO  Utilis:235 - Element not clickable
-2018-08-14 15:06:30 INFO  Utilis:220 - Element not visible to click
-2018-08-14 15:07:37 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:07:38 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:07:38 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:07:40 INFO  Login:45 - user name manjunatha.s@harman.com
-2018-08-14 15:07:40 INFO  Login:46 - user passwordmanjunatha.s@harman.com
-2018-08-14 15:07:42 INFO  Utilis:216 - Element clicked
-2018-08-14 15:07:42 INFO  Login:48 - user clicked on sign
-2018-08-14 15:07:58 INFO  Utilis:216 - Element clicked
-2018-08-14 15:08:01 INFO  Utilis:216 - Element clicked
-2018-08-14 15:08:02 INFO  Utilis:29 - Element is displayed
-2018-08-14 15:08:04 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-2018-08-14 15:08:04 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-2018-08-14 15:08:04 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2018-08-14 15:08:04 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2018-08-14 15:08:04 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/jayaprakashs/.m2/repository/com/relevantcodes/extentreports/2.41.0/extentreports-2.41.0.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-2018-08-14 15:08:04 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-2018-08-14 15:08:04 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-2018-08-14 15:08:04 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2018-08-14 15:08:04 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2018-08-14 15:08:04 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/jayaprakashs/.m2/repository/com/relevantcodes/extentreports/2.41.0/extentreports-2.41.0.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2018-10-15 12:39:13 INFO  Login:45 - user name manjunatha.s@harman.com
+2018-10-15 12:39:13 INFO  Login:46 - user passwordmanjunatha.s@harman.com
+2018-10-15 12:39:13 INFO  Login:48 - user clicked on sign
+2018-10-15 12:39:24 INFO  Utilis:29 - Element is displayed
+2018-10-15 15:47:57 INFO  Login:45 - user name manjunatha.s@harman.com
+2018-10-15 15:47:57 INFO  Login:46 - user passwordmanjunatha.s@harman.com
+2018-10-15 15:47:57 INFO  Login:48 - user clicked on sign
+2018-10-15 15:48:09 INFO  Utilis:29 - Element is displayed
+2018-10-15 17:22:27 INFO  Login:45 - user name manjunatha.s@harman.com
+2018-10-15 17:22:27 INFO  Login:46 - user passwordmanjunatha.s@harman.com
+2018-10-15 17:22:27 INFO  Login:48 - user clicked on sign
+2018-10-15 17:22:39 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:03:28 INFO  Login:45 - user name manjunatha.s@harman.com
+2018-10-15 18:03:28 INFO  Login:46 - user passwordmanjunatha.s@harman.com
+2018-10-15 18:03:28 INFO  Login:48 - user clicked on sign
+2018-10-15 18:03:38 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:05:28 INFO  Login:45 - user name manjunatha.s@harman.com
+2018-10-15 18:05:28 INFO  Login:46 - user passwordmanjunatha.s@harman.com
+2018-10-15 18:05:28 INFO  Login:48 - user clicked on sign
+2018-10-15 18:08:55 INFO  Login:45 - user name manjunatha.s@harman.com
+2018-10-15 18:08:55 INFO  Login:46 - user passwordmanjunatha.s@harman.com
+2018-10-15 18:08:56 INFO  Login:48 - user clicked on sign
+2018-10-15 18:09:34 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:37:16 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:37:17 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:37:17 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:37:21 INFO  Login:45 - user name manjunatha.s@harman.com
+2018-10-15 18:37:21 INFO  Login:46 - user passwordmanjunatha.s@harman.com
+2018-10-15 18:37:22 INFO  Utilis:216 - Element clicked
+2018-10-15 18:37:22 INFO  Login:48 - user clicked on sign
+2018-10-15 18:38:12 INFO  Utilis:235 - Element not clickable
+2018-10-15 18:38:12 INFO  Utilis:220 - Element not visible to click
+2018-10-15 18:38:12 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2018-10-15 18:38:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2018-10-15 18:38:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2018-10-15 18:38:12 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2018-10-15 18:38:12 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/jayaprakashs/.m2/repository/com/relevantcodes/extentreports/2.41.0/extentreports-2.41.0.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2018-10-15 18:38:48 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:38:48 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:38:48 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:38:53 INFO  Login:45 - user name manjunatha.s@harman.com
+2018-10-15 18:38:53 INFO  Login:46 - user passwordmanjunatha.s@harman.com
+2018-10-15 18:38:54 INFO  Utilis:216 - Element clicked
+2018-10-15 18:38:54 INFO  Login:48 - user clicked on sign
+2018-10-15 18:39:06 INFO  Utilis:216 - Element clicked
+2018-10-15 18:40:06 INFO  Utilis:251 - Element not visible
+2018-10-15 18:40:06 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2018-10-15 18:40:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2018-10-15 18:40:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2018-10-15 18:40:06 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2018-10-15 18:40:06 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/jayaprakashs/.m2/repository/com/relevantcodes/extentreports/2.41.0/extentreports-2.41.0.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2018-10-15 18:40:41 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:40:41 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:40:41 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:40:46 INFO  Login:45 - user name manjunatha.s@harman.com
+2018-10-15 18:40:46 INFO  Login:46 - user passwordmanjunatha.s@harman.com
+2018-10-15 18:40:46 INFO  Utilis:216 - Element clicked
+2018-10-15 18:40:46 INFO  Login:48 - user clicked on sign
+2018-10-15 18:41:00 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:41:00 INFO  Login:59 - user has logged and Dashboard is displayed
+2018-10-15 18:41:00 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:41:01 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:41:01 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:41:01 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:41:02 INFO  Dashboard:95 - sum of devices is correct
+2018-10-15 18:41:03 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2018-10-15 18:41:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2018-10-15 18:41:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2018-10-15 18:41:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2018-10-15 18:41:03 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/jayaprakashs/.m2/repository/com/relevantcodes/extentreports/2.41.0/extentreports-2.41.0.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2018-10-15 18:41:03 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2018-10-15 18:41:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2018-10-15 18:41:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2018-10-15 18:41:03 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2018-10-15 18:41:03 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/jayaprakashs/.m2/repository/com/relevantcodes/extentreports/2.41.0/extentreports-2.41.0.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2018-10-15 18:50:41 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:50:41 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:50:41 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:50:46 INFO  Login:45 - user name manjunatha.s@harman.com
+2018-10-15 18:50:46 INFO  Login:46 - user passwordmanjunatha.s@harman.com
+2018-10-15 18:50:46 INFO  Utilis:216 - Element clicked
+2018-10-15 18:50:46 INFO  Login:48 - user clicked on sign
+2018-10-15 18:50:57 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:50:57 INFO  Login:59 - user has logged and Dashboard is displayed
+2018-10-15 18:50:57 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:50:57 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:50:58 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:50:58 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:50:59 INFO  Dashboard:100 - sum of devices is incorrect
+2018-10-15 18:50:59 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2018-10-15 18:50:59 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2018-10-15 18:50:59 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2018-10-15 18:50:59 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2018-10-15 18:50:59 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/jayaprakashs/.m2/repository/com/relevantcodes/extentreports/2.41.0/extentreports-2.41.0.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2018-10-15 18:51:00 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2018-10-15 18:51:00 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2018-10-15 18:51:00 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2018-10-15 18:51:00 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2018-10-15 18:51:00 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/jayaprakashs/.m2/repository/com/relevantcodes/extentreports/2.41.0/extentreports-2.41.0.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2018-10-15 18:57:15 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:57:15 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:57:15 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:57:20 INFO  Login:45 - user name HorizonPro3@gmail.com
+2018-10-15 18:57:20 INFO  Login:46 - user passwordHorizonPro3@gmail.com
+2018-10-15 18:57:20 INFO  Utilis:216 - Element clicked
+2018-10-15 18:57:20 INFO  Login:48 - user clicked on sign
+2018-10-15 18:57:31 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:57:31 INFO  Login:59 - user has logged and Dashboard is displayed
+2018-10-15 18:57:31 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:57:31 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:57:32 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:57:32 INFO  Utilis:29 - Element is displayed
+2018-10-15 18:57:32 INFO  Dashboard:95 - sum of devices is correct
+2018-10-15 18:57:35 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2018-10-15 18:57:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2018-10-15 18:57:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2018-10-15 18:57:35 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2018-10-15 18:57:35 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/jayaprakashs/.m2/repository/com/relevantcodes/extentreports/2.41.0/extentreports-2.41.0.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2018-10-15 18:57:36 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2018-10-15 18:57:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2018-10-15 18:57:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2018-10-15 18:57:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2018-10-15 18:57:36 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/jayaprakashs/.m2/repository/com/relevantcodes/extentreports/2.41.0/extentreports-2.41.0.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2018-10-15 20:48:52 INFO  Utilis:29 - Element is displayed
+2018-10-15 20:48:53 INFO  Utilis:29 - Element is displayed
+2018-10-15 20:48:53 INFO  Utilis:29 - Element is displayed
+2018-10-15 20:48:58 INFO  Login:45 - user name HorizonPro3@gmail.com
+2018-10-15 20:48:58 INFO  Login:46 - user passwordHorizonPro3@gmail.com
+2018-10-15 20:48:58 INFO  Utilis:216 - Element clicked
+2018-10-15 20:48:58 INFO  Login:48 - user clicked on sign
+2018-10-15 20:49:09 INFO  Utilis:29 - Element is displayed
+2018-10-15 20:49:09 INFO  Login:59 - user has logged and Dashboard is displayed
+2018-10-15 20:49:10 INFO  Utilis:29 - Element is displayed
+2018-10-15 20:49:10 INFO  Utilis:29 - Element is displayed
+2018-10-15 20:49:10 INFO  Utilis:29 - Element is displayed
+2018-10-15 20:49:11 INFO  Utilis:29 - Element is displayed
+2018-10-15 20:49:11 INFO  Dashboard:95 - sum of devices is correct
+2018-10-15 20:49:13 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2018-10-15 20:49:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2018-10-15 20:49:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2018-10-15 20:49:13 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2018-10-15 20:49:13 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/jayaprakashs/.m2/repository/com/relevantcodes/extentreports/2.41.0/extentreports-2.41.0.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2018-10-15 20:49:14 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2018-10-15 20:49:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2018-10-15 20:49:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2018-10-15 20:49:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2018-10-15 20:49:14 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/jayaprakashs/.m2/repository/com/relevantcodes/extentreports/2.41.0/extentreports-2.41.0.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

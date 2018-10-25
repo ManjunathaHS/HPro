@@ -32,7 +32,7 @@ public class Dashboard {
     Utilis utilis = new Utilis ( );
 
 
-    @FindBy(how = How.XPATH, using = "//div[@class='logo-holder']")
+    @FindBy(how = How.CSS, using = "div.logo-holder")
     private WebElement JBLLogo;
 
     @FindBy(how = How.XPATH, using = "//i[@class='icon icon-settings']")

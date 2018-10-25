@@ -15,10 +15,10 @@
 
 
         <!-- title of the document -->
-        <documentTitle>VDC Automation Report
+        <documentTitle>EVPA UI Automation Report
         </documentTitle>
         <!-- report name - displayed at top-nav -->
-        <reportName>VDC Automation Report</reportName>
+        <reportName>EVPA UI Automation Report</reportName>
         <!-- report headline - displayed at top-nav, after reportHeadline -->
         <reportHeadline></reportHeadline>
 
